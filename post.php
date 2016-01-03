@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$message	= stripslashes(trim($_POST['form_message']));
 
 if (($name == null) || ($email == null) || ($message == null)) {
-        die("0");
+        die("2");
 }
 
 	$to = "corey@tleo.net";
