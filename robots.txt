@@ -6,4 +6,7 @@ Disallow: /js
 Disallow: /fonts
 Disallow: /css
 Disallow: /README.md
+Disallow: /drupal
+Disallow: /cgi-bin
+
 Allow: /
