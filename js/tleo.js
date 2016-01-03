@@ -99,9 +99,11 @@ function submitForm(){
 					alert("Your message was successfully sent!");
 					window.location.href = "/";
 				} else if (data == "0") {
-					alert("Something went wrong! Please try again.\nError: 0x10");
+					alert("Something went wrong! Please try again.");
+				} else if (data == "2") {
+					alert("The server thinks you aren't sending anything... can you try that again?\nError: 0x20");
 				} else {
-					alert("The server isn't responding. Please refresh the page and try again.\nError: 0x20");
+					alert("The server isn't responding. Please refresh the page and try again.\nError: 0x10");
 				}
 			}else{
 				alert("We couldn't connect to our server! Please check your internet connection and try again.\nError: 0x30");
