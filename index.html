@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="This is Corey's project server. Feel free to check it out!">
+	<meta name="keywords" content="Corey Stewart, Corey H. Stewart, Corey Hamilton Stewart, Coreys Project Server, tleo">
+	<meta name="author" content="Corey H. Stewart">
+
+	<title>Corey's Project Server</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Site specific CSS (code I wrote myself) -->
+	<link href="theme.css" rel="stylesheet">
+
+  	<noscript>
+  		<style>
+  			.JSOnly {
+  				display: none;
+  			}
+  			.navPage .home {
+  				display: inline;
+  			}
+  			.navPage .about {
+  				display: inline;
+  			}
+  		</style>
+	</noscript>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  </head>
+
+  <body role="document">
+  	<!-- JS navbar -->
+	<!-- <div class="JSOnly"> -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="">Corey's Project Server</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="#home" id="home-button">Home</a></li>
+				<li class="dropdown">
+	              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+	              <ul class="dropdown-menu" role="menu">
+	                <li class="dropdown-header">Nothing here yet...</li>
+	              </ul>
+	            </li>
+				<li><a href="#about" id="about-button">About</a></li>
+				<li><a href="#contact" id="contact-button">Contact</a></li>
+				<li><noscript><a class="noJSWarning" href="#">This navbar wont work without JavaScript support!</a></noscript></li>
+			  </ul>
+			</div><!--/.nav-collapse -->
+		  </div>
+		</nav>
+	<!-- </div> -->
+
+	<div id="home" class="navPage home">
+		<div class="container home" role="home">
+			<div class="jumbotron">
+				<h1>Home</h1>
+				<p>This is Corey's project server. Feel free to check it out!</p>
+				<noscript>
+					<p class="noJSWarning">Also, I noticed you are using a browser that does not support JavaScript or is blocking it. Some features, including the navigation bar, will not work properly without JavaScript support. I included some content on this page that would otherwise be accessible on other pages using the navigation bar. But if you can, please enable JavaScript and refresh this page for the best experience.</p>
+				</noscript>
+			</div>
+		</div>
+	</div>
+
+	<div id="about" class="navPage about">
+		<div class="container about" role="about">
+			<div class="jumbotron">
+				<h1>About</h1>
+				<p>Corey is a student of Computer Science and Network Security. He owns a server, which wouldn't be complete without its own website. So this is it! If you want to learn more about Corey, checkout the links below!</p>
+				<div class="btn-toolbar" role="toolbar" aria-label="aria label">
+					<div class="btn-group btn-group" role="group" aria-label="btn1">
+						<a href="http://github.com/itscory" role="button" class="btn btn-default" target="_blank">GitHub</a>
+						<a href="http://www.linkedin.com/in/CoreyHStewart" role="button" class="btn btn-default" target="_blank">LinkedIn</a>
+						<a href="http://www.facebook.com/CoreyHStewart" role="button" class="btn btn-default" target="_blank">Facebook</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="contact" class="navPage contact">
+		<div class="container contact" role="contact">
+			<div class="jumbotron">
+				<br>
+				<form role="form">
+					<div id="name-fg" class="form-group has-feedback">
+						<label class="control-label" for="name">Name:</label>
+						<input type="text" class="form-control" id="name" placeholder="Enter name">
+						<span id="name-feedback-icon" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+					</div>
+
+					<div id="email-fg" class="form-group has-feedback">
+						<label class="control-label" for="email">Email:</label>
+						<div class="input-group">
+							<span class="input-group-addon">@</span>
+							<input type="email" class="form-control" id="email" placeholder="Enter email">
+						</div>
+						<span id="email-feedback-icon" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+					</div>
+
+					<div id="message-fg" class="form-group has-feedback">
+						<label class="control-label" for="message">Message:</label>
+						<textarea class="form-control" rows="5" id="message"></textarea>
+						<span id="message-feedback-icon" class="glyphicon form-control-feedback" aria-hidden="true"></span>
+					</div>
+
+					<button id="submit-button" type="submit" class="btn btn-default" onclick="submitForm()"><i id="submit-label">Submit</i><span class="glyphicon"></span></button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer" class="footer" style="display:none;">
+		<div class="container">
+			<p class="text-muted">&copy Corey H. Stewart</p>
+		</div>
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+	<script src="js/tleo.js"></script>
+  </body>
+</html>

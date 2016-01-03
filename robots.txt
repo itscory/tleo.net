@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /post.php
+Disallow: /private.php
+Disallow: /js
+Disallow: /fonts
+Disallow: /css
+Disallow: /README.md
+Allow: /
